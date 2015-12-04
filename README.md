@@ -20,6 +20,28 @@ Autoloading is [PSR-4](https://github.com/php-fig/fig-standards/blob/master/acce
 }
 ```
 
+## Usage
+
+```php
+use Silex\Application;
+use Dafiti\Silex\SolariumServiceProvider;
+
+$app = new Application();
+$app->register(new DatajetServiceProvider(), [
+    'datajet.config' => [
+      'hawk' => [
+        'import_key' => KEY_IMPORT,
+        'search_key' => KEY_SEARCH,
+      ],
+    ],
+]);
+
+$id = 1;
+$result = $app['datajet']->delete($id);
+
+```
+Please see DatajetClient docs: [https://github.com/dafiti/datajet-client/](https://github.com/dafiti/datajet-client/)
+
 ## License
 
 MIT License
