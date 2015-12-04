@@ -5,7 +5,7 @@ namespace Dafiti\Silex;
 use Silex\Application;
 use Silex\ServiceProviderInterface;
 
-class DataJetServiceProvider implements ServiceProviderInterface
+class DatajetServiceProvider implements ServiceProviderInterface
 {
     private $prefix = 'datajet';
 
