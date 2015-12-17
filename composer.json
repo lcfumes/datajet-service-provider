@@ -26,7 +26,7 @@
     "require": {
         "php": ">=5.5.0",
         "silex/silex": "~1.3.4",
-        "dafiti/datajet-client": "0.1.2"
+        "dafiti/datajet-client": "0.2.0"
     },
     "require-dev": {
         "phpunit/phpunit": "@stable",
